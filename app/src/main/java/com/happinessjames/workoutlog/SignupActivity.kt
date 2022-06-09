@@ -80,5 +80,8 @@ class SignupActivity : AppCompatActivity() {
             tilConfirmation.error = " Confirm Password is required"
             error = true
         }
+        if (passwordsignup!=confirmation){
+            tilConfirmation.error = "Password does not match"
+        }
     }
 }
